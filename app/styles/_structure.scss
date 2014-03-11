@@ -1,3 +1,7 @@
+body {
+	background: #f7f7f7;
+}
+
 
 .full-width {
 	float: left;
@@ -16,6 +20,16 @@
 	&.off-green {
 		background-color: $mutedGreen;
 		border-bottom: 1px solid rgba($green, 0.25);
+	}
+
+	&.subdued {
+		background-color: #F2F3F4;
+		border-top: 1px solid #DEE4E8;
+		border-bottom: 1px solid #DEE4E8;
+	}
+
+	&.red {
+		background-color: #CE4946;
 	}
 
 }

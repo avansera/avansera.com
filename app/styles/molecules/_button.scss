@@ -71,19 +71,19 @@ $height: $touchTarget;
 		}
 	}
 
-	&.green {
+	&.blue {
 		@extend .default;
-		background-color: $green;
+		background-color: $brand-colour;
 		color: $white;
 		&:hover,
 		&:focus {
-			background-color: lighten($green, 10%);
+			background-color: lighten($brand-colour, 15%);
 			color: $white;
 		}
 
 
 		&:active {
-			background-color: darken($green, 10%);
+			background-color: darken($brand-colour, 3%);
 		}
 	}
 
