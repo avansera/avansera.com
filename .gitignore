@@ -3,7 +3,7 @@ dist
 .tmp
 .sass-cache
 app/bower_components
-app/styles/*.css
+app/styles/**/*.css
 test/bower_components
 .idea
 .jshintrc
