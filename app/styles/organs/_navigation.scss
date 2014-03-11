@@ -1,0 +1,19 @@
+.navigation {
+	float: right;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			float: left;
+			margin: 0 0 0 1em;
+
+			a {
+				line-height: 50px;
+				text-transform: capitalize;
+			}
+		}
+	}
+}

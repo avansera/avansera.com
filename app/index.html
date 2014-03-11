@@ -12,10 +12,10 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
@@ -25,14 +25,22 @@
         <![endif]-->
 
 
-        <header id="header" class="full-width blue nav-bar">
+        <header id="header" class="full-width blue navbar">
             <div class="wrapper">
-                <h1>avansera</h1>
-                <nav class="navigation"></nav>
+                <h1 class="site-title">avansera</h1>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#products">our services</a></li>
+                        <li><a href="#features">features</a></li>
+                        <li><a href="#about">about us</a></li>
+                        <li><a href="#media">in the media</a></li>
+                        <li><a href="#footer">contact us</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
-        <section id="hero" class="full-width blue hero-section">
+        <section id="hero" class="full-width blue padded hero-section">
             <div class="wrapper">
                 <h2 class="hero-title">From Big Data to Smart Data</h2>
 
@@ -42,7 +50,9 @@
                     retailers.
                 </h3>
 
-                <a class="button white trans hero-button" href="#products">would you like to know more?</a>
+               <div class="hero-button-wrapper">
+                   <a class="button stroke-white hero-button" href="#products">would you like to know more?</a>
+               </div>
             </div>
         </section>
 

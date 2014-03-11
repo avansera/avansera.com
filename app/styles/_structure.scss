@@ -1,0 +1,51 @@
+
+.full-width {
+	float: left;
+	width: 100%;
+
+	&.black {
+		background-color: $black;
+		color: $white;
+	}
+
+	&.blue {
+		background-color: $brand-colour;
+		color: $white;
+	}
+
+	&.off-green {
+		background-color: $mutedGreen;
+		border-bottom: 1px solid rgba($green, 0.25);
+	}
+
+}
+
+.padded {
+	padding: $unit*4 0;
+
+	&.thin {
+		padding: $unit 0;
+	}
+
+}
+
+.wrapper {
+	max-width: 1140px;
+
+	margin: 0 auto;
+	padding: 0 1em;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@media screen and (min-width: $tablet) {
+
+	.padded {
+
+		&.fat {
+			padding: $unit*8 0;
+		}
+	}
+}

@@ -1,0 +1,159 @@
+$height: $touchTarget;
+
+
+
+.button {
+	display: inline-block;
+	height: $height;
+	min-width: $height;
+	padding: 0 1em;
+
+	border: none;
+
+	color: $white;
+	font-weight: 300;
+	line-height: $height;
+	text-align: center;
+	text-decoration: none;
+
+	cursor: pointer;
+
+
+	-webkit-transition: background-color 0.2s ease-in;
+	-moz-transition: background-color 0.2s ease-in;
+	-ms-transition: background-color 0.2s ease-in;
+	-o-transition: background-color 0.2s ease-in;
+	transition: background-color 0.2s ease-in;
+
+
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none;
+	}
+
+	&.default {
+
+		background: $muted;
+
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+
+
+		&:hover,
+		&:focus {
+			color: inherit;
+			background-color: lighten($muted, 10%);
+		}
+
+
+		&:active {
+			background-color: darken($muted, 10%);
+		}
+	}
+
+	&.red {
+		@extend .default;
+		background-color: $red;
+		color: $white;
+
+		&:hover,
+		&:focus {
+
+			background-color: lighten($red, 10%);
+			color: $white;
+		}
+
+
+		&:active {
+			background-color: darken($red, 10%);
+		}
+	}
+
+	&.green {
+		@extend .default;
+		background-color: $green;
+		color: $white;
+		&:hover,
+		&:focus {
+			background-color: lighten($green, 10%);
+			color: $white;
+		}
+
+
+		&:active {
+			background-color: darken($green, 10%);
+		}
+	}
+
+	&.black {
+		@extend .default;
+		background-color: $black;
+		color: $white;
+		&:hover,
+		&:focus {
+			background-color: lighten($black, 10%);
+			color: $white;
+		}
+
+
+		&:active {
+			background-color: darken($black, 10%);
+		}
+	}
+
+	&.stroke-white {
+		@extend .default;
+		background: transparent;
+		border: 2px solid $white;
+
+		&:hover,
+		&:focus {
+			//border:none;
+			background: $white;
+			color: $brand-colour;
+			line-height: $height;
+		}
+
+
+		&:active {
+			//border:none;
+			background-color: $white;
+			color: $brand-colour;
+			line-height: $height;
+		}
+	}
+
+
+
+
+
+	&.no-style {
+		background: transparent;
+		color: inherit;
+
+		&:hover {
+			color: $green;
+		}
+
+		&.no-hover:hover {
+			color: inherit;
+		}
+
+	}
+
+	&.block {
+		width: 100%;
+	}
+
+
+}
+
+@media screen and (min-width: $mobile) {
+	.button {
+		.block {
+			width: auto;
+		}
+	}
+}
