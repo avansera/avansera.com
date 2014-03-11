@@ -1,0 +1,21 @@
+@media screen and (max-width: $mobile) {
+	.only-mobile {
+		display: inline-block;
+	}
+
+	.only-desktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.only-mobile {
+		display: none;
+	}
+}
+
+@media screen and (min-width: $desktop) {
+	.only-desktop {
+		display: block;
+	}
+}

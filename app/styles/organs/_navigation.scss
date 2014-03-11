@@ -1,5 +1,20 @@
+.navigation-link {
+	position: absolute;
+	right: 0.5em;
+
+	width: 50px;
+	height: 50px;
+
+	background: url('../images/iconmonstr-menu-icon-64.png');
+	background-image: url('../images/iconmonstr-menu-icon.svg');
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .navigation {
-	float: right;
+
+	background: $black;
 
 	ul {
 		margin: 0;
@@ -8,12 +23,23 @@
 
 		li {
 			float: left;
-			margin: 0 0 0 1em;
+			margin: 0;
 
 			a {
 				line-height: 50px;
+				text-align: center;
 				text-transform: capitalize;
 			}
 		}
+	}
+}
+
+
+@media screen and (min-width: $tablet) {
+
+	.navigation {
+		float: right;
+
+
 	}
 }
