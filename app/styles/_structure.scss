@@ -54,6 +54,25 @@ body {
 	box-sizing: border-box;
 }
 
+.shade {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+
+
+	background: #000;
+	opacity: 0.25;
+
+	&.hide {
+		display: none;
+		opacity: 0;
+	}
+
+}
+
 @media screen and (min-width: $tablet) {
 
 	.padded {

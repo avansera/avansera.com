@@ -1,3 +1,10 @@
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+
+
 @media screen and (max-width: $mobile) {
 	.only-mobile {
 		display: inline-block;
