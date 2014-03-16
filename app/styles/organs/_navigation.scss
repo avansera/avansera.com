@@ -1,16 +1,25 @@
 .navigation-link {
 	position: absolute;
-	right: 0.5em;
+	right: 0;
 	z-index: 1001;
 
 	width: 50px;
 	height: 50px;
 
-	background: url('../images/iconmonstr-menu-icon-64.png');
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+
+	&.open {
+		color: $white;
+	}
+
+
+	/*background: url('../images/iconmonstr-menu-icon-64.png');
 	background-image: url('../images/iconmonstr-menu-icon.svg');
 	background-size: 32px 32px;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center;*/
 }
 
 .navigation {
@@ -22,6 +31,8 @@
 	width: 100%;
 
 	background: $black;
+
+	color: $white;
 
 	-webkit-transform: translate3d(0, $navElementHeight*-5, 0);
 	-moz-transform: translate3d(0, $navElementHeight*-5, 0);
@@ -64,7 +75,7 @@
 }
 
 
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $mobile) {
 
 	.navigation {
 		position: static;
@@ -72,6 +83,8 @@
 		width: auto;
 
 		background: none;
+
+		color: $black;
 
 		-webkit-transform: translate3d(0, 0, 0);
 		-moz-transform: translate3d(0, 0, 0);

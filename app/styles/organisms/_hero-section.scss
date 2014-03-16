@@ -1,4 +1,15 @@
 
+.hero-section {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	background-image: url('../images/header-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
 .hero-button-wrapper {
 	width: 100%;
 	margin: $unit*4 0 0;
