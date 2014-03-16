@@ -60,3 +60,4 @@ $('#nav-link').click(function(e) {
 	$('#nav-link').toggleClass('open');
 	$('#shade').toggleClass('hide');
 });
+

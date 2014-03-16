@@ -43,9 +43,9 @@
 
         <section id="hero" class="full-width blue padded hero-section">
             <div class="wrapper">
-                <h2 class="hero-title">From Big Data to Smart Data</h2>
+                <h2 class="hero-title balance-text">From Big Data to Smart Data</h2>
 
-                <h3 class="hero-sub-title">
+                <h3 class="hero-sub-title balance-text">
                     We collect unstructured consumer data, behavioural patterns and shopping
                     trends and filter it into usable, actionable insights and market predictions for brands and
                     retailers.
@@ -66,12 +66,12 @@
                         </div>
                         <div class="product-info-wrapper col-6 offset-1">
                             <h3 class="product-title">Deep Dive</h3>
-                            <p class="product-info">
+                            <p class="product-info balance-text">
                                 Our enterprise data visualisation and predictive analysis tool lets you interpret
                                 real-time consumer behaviour, market trends and retail performance for
                                 any area of the <abbr title="Fast Moving Consumer Goods">FMCG</abbr> industry.
                             </p>
-                            <p>
+                            <p class="balance-text">
                                 By creating datasets from any products, brands, categories or locations or any
                                 combination therein, you can personalise what you wish to visualise and we will analyse,
                                 drill down, and create accurate predictions that you can immediately use.
@@ -92,7 +92,7 @@
                         </div>
                         <div class="product-info-wrapper col-6 offset-1">
                             <h3 class="product-title">&micro;Campaign Manager</h3>
-                            <p class="product-info">
+                            <p class="product-info balance-text">
                                 We allow retailers to quickly and easily manage anything from advertising campaigns,
                                 stock clearances, product additions or price changes in a store. Whats more,
                                 this application can deliver these updates directly to consumers via means of intelligent,
@@ -108,9 +108,9 @@
             <div class="wrapper">
                 <div class="row">
                     <article class="col-4">
-                        <h3 class="feature-title">Real-time consumer data</h3>
+                        <h3 class="feature-title realtime">Real-time consumer data</h3>
 
-                        <p class="feature-content">
+                        <p class="feature-content balance-text">
                             Get a direct feed of what consumers are buying,
                             patterns in basket contents, seasonal trends
                             and market performance
@@ -118,31 +118,31 @@
                     </article>
 
                     <article class="col-4">
-                        <h3 class="feature-title">market predictions</h3>
+                        <h3 class="feature-title market balance-text">market predictions</h3>
 
-                        <p class="feature-content">By analysing consumer behaviour and previous market trends, we can accurately predict not only potential buying behaviour, but we also model the potential effectiveness of marketing campaigns.</p>
+                        <p class="feature-content balance-text">By analysing consumer behaviour and previous market trends, we can accurately predict not only potential buying behaviour, but we also model the potential effectiveness of marketing campaigns.</p>
                     </article>
                     <article class="col-4">
-                        <h3 class="feature-title">Campaign optimisation</h3>
+                        <h3 class="feature-title campaign balance-text">Campaign optimisation</h3>
 
-                        <p class="feature-content"> From historical data as well as analysing consumer trends, we can create optimal models for small or large marketing campaigns in order to maximise their potential return.</p>
+                        <p class="feature-content balance-text"> From historical data as well as analysing consumer trends, we can create optimal models for small or large marketing campaigns in order to maximise their potential return.</p>
                     </article>
                 </div>
                 <div class="row">
                     <article class="col-4">
-                        <h3 class="feature-title">Targeted, localised advertising</h3>
+                        <h3 class="feature-title advertising balance-text">Targeted, localised advertising</h3>
 
-                        <p class="feature-content">Notify potential customers of your current marketing campaigns by informing previous or potential customers of offers, sales or discounts. By targeting those most likely to buy the products, you can ensure your campaigns are heard by the right people.</p>
+                        <p class="feature-content balance-text">Notify potential customers of your current marketing campaigns by informing previous or potential customers of offers, sales or discounts. By targeting those most likely to buy the products, you can ensure your campaigns are heard by the right people.</p>
                     </article>
                     <article class="col-4">
-                        <h3 class="feature-title">compare all forms of data </h3>
+                        <h3 class="feature-title compare balance-text">compare all forms of data </h3>
 
-                        <p class="feature-content">Import your own data, whether it be supply or inventory information, historical or forecasted weather information, local traffic data or anything else you can think of. Allow us to give you even greater and more refined insight by tapping into the enormously complex pool of data that exists.</p>
+                        <p class="feature-content balance-text">Import your own data, whether it be supply or inventory information, historical or forecasted weather information, local traffic data or anything else you can think of. Allow us to give you even greater and more refined insight by tapping into the enormously complex pool of data that exists.</p>
                     </article>
                     <article class="col-4">
-                        <h3 class="feature-title">your imagination is the only limit</h3>
+                        <h3 class="feature-title imagination balance-text">your imagination is the only limit</h3>
 
-                        <p class="feature-content">No barriers should hold you back from getting the insight you need to streamline your business. This is why we allow you have access to and the ability to dive into every aspect of our data.</p>
+                        <p class="feature-content balance-text">No barriers should hold you back from getting the insight you need to streamline your business. This is why we allow you have access to and the ability to dive into every aspect of our data.</p>
                     </article>
                 </div>
             </div>
@@ -237,9 +237,12 @@
 
 
 
-        <!-- build:js scripts/vendor.js -->
+        <!-- build:js scripts/scripts.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="scripts/jquery.balancetext.js"></script>
+
+		<script src="scripts/main.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -254,7 +257,6 @@
         </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>

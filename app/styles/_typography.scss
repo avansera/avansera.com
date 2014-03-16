@@ -32,7 +32,21 @@ a:hover,
 a:active,
 a:focus {
 	text-decoration: underline;
+}
 
+abbr {
+
+	&[title] {
+		border: none;
+	}
+
+	&:after {
+		content: ' ('attr(title)')';
+	}
+}
+
+p {
+	text-wrap: balanced;
 }
 
 .site-title {
@@ -49,12 +63,23 @@ a:focus {
 
 @media screen and (min-width: $mobile) {
 
+	abbr {
+		&[title] {
+			border-bottom: 1px dotted;
+		}
+
+		&:after {
+			content: '';
+		}
+	}
+
 	.site-title {
 		position: relative;
 		float: left;
 		width: auto;
 		margin: 0 0 0 $unit+36px;
 	}
+
 }
 
 .hero-title {
@@ -73,4 +98,12 @@ a:focus {
 	font-weight: 300;
 	text-align: center;
 	opacity: 0.85;
+}
+
+.feature-title {
+	position: relative;
+	margin: 0;
+	padding: $unit*4 0 0;
+	text-transform: capitalize;
+	text-align: center;
 }

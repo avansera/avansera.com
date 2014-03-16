@@ -1,0 +1,41 @@
+
+.feature-title {
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+
+		font-family: 'FontAwesome';
+		font-size: $unit*2;
+		line-height: $unit*4;
+
+		opacity: 0.85;
+	}
+
+	&.realtime:before {
+		content: '\f03d';
+	}
+
+	&.market:before {
+		content: '\f133';
+	}
+
+	&.campaign:before {
+		content: '\f148';
+	}
+
+	&.advertising:before {
+		content: '\f140';
+	}
+
+	&.compare:before {
+		content: '\f066';
+	}
+
+	&.imagination:before {
+		content: '\f135';
+	}
+}
+

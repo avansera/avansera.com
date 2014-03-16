@@ -14,9 +14,10 @@ $column: 8.3333%;
 }
 
 @media screen and (min-width: $mobile) {
-	/*[class*='col-'] + [class*='col-'] {
-		padding: 0 0 0 $unit;
-	}*/
+
+	.row + .row {
+		margin: $unit*4 0 0;
+	}
 
 	[class*='col-'] {
 		padding: 0 $unit 0 0;
